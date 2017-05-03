@@ -1,0 +1,135 @@
+.header-bg {
+    height: 100vh;
+    background: #444;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/header-bg__img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+}
+
+.header-bg 
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header-bg 
+.wrapper 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bg 
+.wrapper 
+.header
+.logo {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header-bg 
+.wrapper 
+.header 
+.menu {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transform: translateX(100%);
+    transition: all .3s ease;
+    background: #000;
+}
+
+.header-bg 
+.wrapper 
+.header 
+.menu--active {
+    transform: translateX(0);
+}
+
+.header-bg 
+.wrapper 
+.header 
+.menu
+.close-btn {
+    display: none;
+    z-index: 5;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/close-btn.png);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.header-bg 
+.wrapper 
+.header 
+.menu
+.close-btn--active {
+    display: block;
+}
+
+.header-bg 
+.wrapper 
+.header 
+.menu
+.menu-list
+.menu-list__item
+.link {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.header-bg 
+.wrapper 
+.header
+.menu-trigger {
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/menu-trigger.png);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.header-bg 
+.wrapper 
+.header
+.menu-trigger:hover {
+    cursor: pointer;
+}
+
+.header-bg 
+.wrapper
+.header-bg__content {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.header-bg 
+.wrapper
+.scroll-down {
+    height: 23px;
+    background-image: url(../images/arrow-down.png);
+    background-size: 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

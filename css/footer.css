@@ -1,0 +1,67 @@
+.footer {
+	background-color: #444;
+}
+
+.footer
+.socials-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer
+.socials-list
+.socials-list__item-link {
+	display: block;
+	margin: 10px 0;
+	padding: 0 20px;
+	width: 24px;
+	height: 24px;	
+	background-repeat: no-repeat;
+	background-size: 24px;
+	background-position: center center;
+}
+
+.footer
+.socials-list
+.facebook {
+	background-image: url("../images/facebook-white.png");
+}
+
+.footer
+.socials-list
+.facebook:hover {
+	background-image: url("../images/facebook.png");
+}
+
+.footer
+.socials-list
+.linkedin {
+	background-image: url("../images/linkedin-white.png");
+}
+
+.footer
+.socials-list
+.linkedin:hover {
+	background-image: url("../images/linkedin.png");
+}
+
+.footer
+.socials-list
+.github {
+	background-image: url("../images/github-white.png");
+}
+
+.footer
+.socials-list
+.github:hover {
+	background-image: url("../images/github.png");
+}
+
+.footer
+.copyright {
+	margin-top: 20px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
