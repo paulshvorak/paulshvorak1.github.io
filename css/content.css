@@ -28,6 +28,50 @@
 
 .content
 .about
+.socials-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content
+.about
+.socials-list
+.socials-list__item-link {
+	display: block;
+	margin: 10px 0;
+	padding: 0 20px;
+	width: 24px;
+	height: 24px;	
+	background-repeat: no-repeat;
+}
+
+.content
+.about
+.socials-list
+.facebook {
+	background-image: url(../images/sprite.png);
+	background-position: 0 -72px;
+}
+
+.content
+.about
+.socials-list
+.linkedin {
+	background-image: url(../images/sprite.png);
+	background-position: 0 -216px;
+}
+
+.content
+.about
+.socials-list
+.github {
+	background-image: url(../images/sprite.png);
+	background-position: 0 -144px;
+}
+
+.content
+.about
 .about-picture
 img {
 	max-width: 280px;
@@ -68,14 +112,6 @@ img {
 .content
 .works
 .works-header
-.works-header__filters-item:hover {
-	font-weight: bold;
-	cursor: pointer;
-}
-
-.content
-.works
-.works-header
 .works-header__filters-item--active {
 	padding: 4px 8px;
 	background-color: #444;
@@ -91,6 +127,11 @@ img {
 }
 
 .content
+.works {
+	padding-top: 30px;
+}
+
+.content
 .works
 .works-items {
 	margin: 20px 0;
@@ -101,10 +142,11 @@ img {
 .works-items
 .works-item {
 	display: block;
-	margin-bottom: 20px;
+	margin: 0 auto;
+	max-width: 300px;
 	height: 150px;
-	background-color: #888;
 	overflow: hidden;
+	border: 1px solid #efefef;
 }
 
 .content
@@ -156,4 +198,193 @@ img {
 .contacts
 .contacts-mail {
 	margin-bottom: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    .content
+	.works
+	.works-header
+	.works-header__filters {
+		justify-content: space-around;
+	}
+
+	.content
+	.contacts
+	.contacts-title {
+		margin-bottom: 40px;
+	}
+
+	.content
+	.contacts
+	.contacts-block {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.content
+	.works
+	.works-items
+	.works-item {
+		float: left;
+		width: 240px;
+	}
+}
+
+@media screen and (min-width: 740px) {
+    
+    .content
+    .about {
+    	display: flex;
+    	justify-content: space-between;
+    	margin-bottom: 80px;
+    }
+
+    .content
+	.about
+	.about-descr {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: 50%;
+		margin-bottom: 0;
+	}
+
+	.content
+	.about
+	.about-descr
+	.about-descr__title {
+		text-align: left;
+	}
+
+    .content
+	.about
+	.about-picture {
+		margin-left: 30px;
+	}
+
+    .content
+	.about
+	.about-picture
+	img {
+		max-width: 240px;
+	}
+
+	.content
+	.about
+	.socials-list {
+		justify-content: flex-start;
+	}
+
+	.content
+	.works
+	.works-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+
+	.content
+	.works
+	.works-header
+	.works-header__title {
+		margin-bottom: 0;
+	}
+
+	.content
+	.works
+	.works-header
+	.works-header__filters {
+		min-width: 200px;
+		justify-content: space-between;
+	}
+
+	.content
+	.works
+	.works-items
+	.works-item {
+		width: calc(100% / 3);
+	}
+
+}
+
+@media screen and (min-width: 990px) {
+    .content
+	.works
+	.works-items
+	.works-item {
+		height: 200px;
+	}
+
+	.content
+	.works
+	.works-items
+	.works-item
+	.works-item__descr
+	.works-item__title {
+		line-height: 200px;
+	}
+
+	.content
+	.contacts
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.content
+	.contacts
+	.contacts-title {
+		margin-bottom: 0;
+	}
+
+	.content
+	.contacts
+	.contacts-mail {
+		margin-bottom: 0;
+		margin-right: 50px;
+	}
+
+	.content
+	.about
+	.socials-list
+	.facebook:hover {
+		background-image: url(../images/sprite.png);
+		background-position: 0 -48px;
+	}
+
+	.content
+	.about
+	.socials-list
+	.linkedin:hover {
+		background-image: url(../images/sprite.png);
+		background-position: 0 -192px;
+	}
+
+	.content
+	.about
+	.socials-list
+	.github:hover {
+		background-image: url(../images/sprite.png);
+		background-position: 0 -120px;
+	}
+
+	.content
+	.works
+	.works-header
+	.works-header__filters-item:hover {
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+}
+
+
+@media screen and (min-width: 1240px) {
+    .content
+	.works
+	.works-items
+	.works-item {
+		width: 275px;
+	}
 }

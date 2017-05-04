@@ -1,5 +1,4 @@
 
-
 ;(function(){
 
 	// Get elements
@@ -7,6 +6,10 @@
 	var menuBtn = document.querySelector('.menu-trigger');
 	var closeBtn = document.querySelector('.close-btn');
 	var menu = document.querySelector('.menu');
+	var scrollDown = document.querySelector('.scroll-down');
+
+
+	
 
 	// Functions
 
@@ -28,6 +31,7 @@
 	// EventListeners
 
 	menuBtn.addEventListener('click', openMobileMenu, false);
+	menu.addEventListener('click', closeMobileMenu, false);
 	closeBtn.addEventListener('click', closeMobileMenu, false);
 
 }());

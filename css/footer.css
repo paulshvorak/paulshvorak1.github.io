@@ -18,44 +18,27 @@
 	width: 24px;
 	height: 24px;	
 	background-repeat: no-repeat;
-	background-size: 24px;
-	background-position: center center;
 }
 
 .footer
 .socials-list
 .facebook {
-	background-image: url("../images/facebook-white.png");
-}
-
-.footer
-.socials-list
-.facebook:hover {
-	background-image: url("../images/facebook.png");
+	background-image: url(../images/sprite.png);
+	background-position: 0 -96px;
 }
 
 .footer
 .socials-list
 .linkedin {
-	background-image: url("../images/linkedin-white.png");
-}
-
-.footer
-.socials-list
-.linkedin:hover {
-	background-image: url("../images/linkedin.png");
+	background-image: url(../images/sprite.png);
+	background-position: 0 -240px;
 }
 
 .footer
 .socials-list
 .github {
-	background-image: url("../images/github-white.png");
-}
-
-.footer
-.socials-list
-.github:hover {
-	background-image: url("../images/github.png");
+	background-image: url(../images/sprite.png);
+	background-position: 0 -168px;
 }
 
 .footer
@@ -64,4 +47,42 @@
 	font-size: 12px;
 	color: #fff;
 	text-align: center;
+}
+
+@media screen and (min-width: 990px) {
+    	
+	
+	.footer
+	.socials-list
+	.facebook:hover {
+		background-image: url(../images/sprite.png);
+		background-position: 0 -48px;
+	}
+
+	.footer
+	.socials-list
+	.linkedin:hover {
+		background-image: url(../images/sprite.png);
+		background-position: 0 -192px;
+	}
+
+	.footer
+	.socials-list
+	.github:hover {
+		background-image: url(../images/sprite.png);
+		background-position: 0 -120px;
+	}
+    	
+    .footer
+    .wrapper {
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+
+    .footer
+	.copyright {
+		margin-top: 0;
+	}
+
 }

@@ -29,6 +29,7 @@
 .header
 .logo {
     font-size: 20px;
+    color: #fff;
     text-transform: uppercase;
 }
 
@@ -49,7 +50,7 @@
 
     transform: translateX(100%);
     transition: all .3s ease;
-    background: #000;
+    background: rgba(0,0,0, .98);
 }
 
 .header-bg 
@@ -69,12 +70,11 @@
     position: fixed;
     top: 30px;
     right: 30px;
-    width: 23px;
-    height: 23px;
-    background-image: url(../images/close-btn.png);
-    background-size: 23px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/sprite.png);
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: 0 -24px;
 }
 
 .header-bg 
@@ -95,26 +95,20 @@
     display: block;
     text-align: center;
     padding: 20px 0;
+    color: #fff;
     text-transform: uppercase;
+    transition: all .3 ease;
 }
 
 .header-bg 
 .wrapper 
 .header
 .menu-trigger {
-    width: 23px;
-    height: 23px;
-    background-image: url(../images/menu-trigger.png);
-    background-size: 23px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/sprite.png);
     background-repeat: no-repeat;
-    background-position: 0 0;
-}
-
-.header-bg 
-.wrapper 
-.header
-.menu-trigger:hover {
-    cursor: pointer;
+    background-position: 0 -264px;
 }
 
 .header-bg 
@@ -128,8 +122,72 @@
 .wrapper
 .scroll-down {
     height: 23px;
-    background-image: url(../images/arrow-down.png);
-    background-size: 23px;
+    background-image: url(../images/sprite.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 0;
+}
+
+@media screen and (min-width: 740px) {
+    
+    .header-bg 
+    .wrapper 
+    .header
+    .menu {
+        position: static;
+        flex-direction: row;
+        transform: translateX(0);
+        background: transparent;
+    }
+
+    .header-bg 
+    .wrapper 
+    .header 
+    .menu
+    .menu-list
+    .menu-list__item
+    .link {
+        padding: 10px 0 10px 30px;
+    }
+
+    .header-bg 
+    .wrapper 
+    .header
+    .menu
+    .menu-list {
+        display: flex;
+    }
+
+    .header-bg 
+    .wrapper 
+    .header
+    .menu-trigger {
+        display: none;
+    }
+
+    .header-bg 
+    .wrapper
+    .header-bg__content {
+        font-size: 36px;
+    }
+
+}
+
+@media screen and (min-width: 990px) {
+    .header-bg 
+    .wrapper 
+    .header
+    .menu-trigger:hover {
+        cursor: pointer;
+    }
+
+    .header-bg 
+    .wrapper 
+    .header 
+    .menu
+    .menu-list
+    .menu-list__item
+    .link:hover {
+        color: #ccc;
+    }
+
 }
