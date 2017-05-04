@@ -29,9 +29,18 @@
 .content
 .about
 .socials-list {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .content
@@ -96,9 +105,18 @@ img {
 .works
 .works-header
 .works-header__filters {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .content
@@ -106,6 +124,7 @@ img {
 .works-header
 .works-header__filters-item {
 	text-transform: uppercase;
+	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 }
 
@@ -153,7 +172,9 @@ img {
 .works
 .works-items
 .works-item:hover > .works-item__descr {
-	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	    -ms-transform: translateX(0);
+	        transform: translateX(0);
 }
 
 .content
@@ -161,7 +182,10 @@ img {
 .works-items
 .works-item
 .works-item__descr {
-	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	    -ms-transform: translateY(-100%);
+	        transform: translateY(-100%);
+	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 	background-color: #444;	
 }
@@ -205,7 +229,9 @@ img {
 	.works
 	.works-header
 	.works-header__filters {
-		justify-content: space-around;
+		-webkit-justify-content: space-around;
+		    -ms-flex-pack: distribute;
+		        justify-content: space-around;
 	}
 
 	.content
@@ -217,8 +243,13 @@ img {
 	.content
 	.contacts
 	.contacts-block {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-around;
+		-webkit-justify-content: space-around;
+		    -ms-flex-pack: distribute;
+		        justify-content: space-around;
 	}
 
 	.content
@@ -234,17 +265,33 @@ img {
     
     .content
     .about {
+    	display: -webkit-box;
+    	display: -webkit-flex;
+    	display: -ms-flexbox;
     	display: flex;
-    	justify-content: space-between;
+    	-webkit-box-pack: justify;
+    	-webkit-justify-content: space-between;
+    	    -ms-flex-pack: justify;
+    	        justify-content: space-between;
     	margin-bottom: 80px;
     }
 
     .content
 	.about
 	.about-descr {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 		max-width: 50%;
 		margin-bottom: 0;
 	}
@@ -272,15 +319,27 @@ img {
 	.content
 	.about
 	.socials-list {
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		-webkit-justify-content: flex-start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 	}
 
 	.content
 	.works
 	.works-header {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		margin-bottom: 50px;
 	}
 
@@ -296,13 +355,17 @@ img {
 	.works-header
 	.works-header__filters {
 		min-width: 200px;
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 
 	.content
 	.works
 	.works-items
 	.works-item {
+		width: -webkit-calc(100% / 3);
 		width: calc(100% / 3);
 	}
 
@@ -328,8 +391,14 @@ img {
 	.content
 	.contacts
 	.wrapper {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 
 	.content
